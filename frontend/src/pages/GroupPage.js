@@ -16,8 +16,6 @@ import ChatbotWidget from '../components/ChatbotWidget';
 import TransactionHistory from '../components/TransactionHistory';
 import { useNavigate } from 'react-router-dom';
 
-const MANUAL_MODE = false;
-
 // Test Users
 const USER_GROUPS = {
   'mustafa.bookwala@sap.com': [

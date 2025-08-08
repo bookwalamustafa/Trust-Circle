@@ -37,8 +37,9 @@ const LoginSignup = ({ mode = 'login' }) => {
         if (user && user.password === formData.password) {
           localStorage.setItem('userId', user.userID);
           localStorage.setItem('userEmail', formData.email);
-          alert('Login successful! Redirecting to your group...');
-          window.location.href = '/group';
+          // alert('Login successful! Redirecting...');
+          const redirectPath = formData.email === 'mustafa.bookwala@sap.com' ? '/creategroup' : '/group';
+          window.location.href = redirectPath;
           return;
         } else {
           alert('Invalid email or password. Please try again.');
@@ -104,8 +105,9 @@ const LoginSignup = ({ mode = 'login' }) => {
         if (mode === 'login') {
           localStorage.setItem('userId', result.userID);
           localStorage.setItem('userEmail', formData.email);
-          alert('Login successful! Redirecting to your group...');
-          window.location.href = '/group';
+          // alert('Login successful! Redirecting...');
+          const redirectPath = formData.email === 'mustafa.bookwala@sap.com' ? '/creategroup' : '/group';
+          window.location.href = redirectPath;
         } else {
           // For signup, the user ID is now returned directly from the signup endpoint
           localStorage.setItem('userId', result.userID);

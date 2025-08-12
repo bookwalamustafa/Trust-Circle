@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Use this container class to center your form page */
+.form-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #0077b6;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scope input styles to form context to avoid conflicts */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+}
+
+/* Scope button styles to avoid affecting navigation buttons */
+.form-container button[type="submit"],
+.form-container .form-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-container button[type="submit"]:hover,
+.form-container .form-button:hover {
+  background-color: #005f87;
+}
+
+.form-container .switch-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-container .switch-link a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-container .switch-link a:hover {
+  text-decoration: underline;
+}

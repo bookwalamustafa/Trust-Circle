@@ -1,0 +1,26 @@
+# Dependency directories
+node_modules/
+.env
+
+# Build outputs
+dist/
+build/
+
+# Cache files
+.nyc_output/
+coverage/
+.eslintcache
+node_modules/.cache/
+
+# OS / Editor
+.DS_Store
+.vscode/
+*.log
+
+# Optional: Python server artifacts (if backend is mixed in)
+__pycache__/
+*.pyc
+
+# Explicit
+backend/secrets
+backend/tc-summary.txt

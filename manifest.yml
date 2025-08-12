@@ -1,0 +1,7 @@
+applications:
+  - name: trust-circle
+    memory: 512M
+    disk_quota: 2G
+    buildpacks:
+      - python_buildpack
+    path: .

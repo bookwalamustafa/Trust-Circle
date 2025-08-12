@@ -9,5 +9,5 @@ This app was developed for the SAP STAR Program Hackathon 2025
 ## Developers and Collaborators
 - Adyan Chowdhury (https://github.com/adyan1025)
 - Mustafa Bookwala (https://github.com/bookwalamustafa)
-- Lucas Loepke
+- Lucas Loepke (https://github.com/lucasloepke)
 - Nyle Coleman
